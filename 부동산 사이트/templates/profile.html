@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}사용자 프로필{% endblock %}
+
+{% block content %}
+    <h1>{{ user.username }}님의 프로필</h1>
+    <p>아이디: {{ user.username }}</p>
+    <p>가입일: {{ user.date_joined.strftime('%Y-%m-%d') }}</p>
+{% endblock %}
